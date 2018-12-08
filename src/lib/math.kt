@@ -2,6 +2,11 @@ fun add(num1:Int, num2: Int):Int {
     return num1 + num2
 }
 
+infix fun Int.myAdd(num:Int):Int{
+    return this + num
+}
+
 fun main(args :Array<String>) {
-    print(add(123,456))
+    println(add(123,456))
+    println(123 myAdd 456)
 }
