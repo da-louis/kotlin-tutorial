@@ -1,7 +1,16 @@
-import mylib.add
 import kotlin.math.*
 
+val users = mapOf(
+        1 to "Jane",
+        2 to "John",
+        3 to "Mike"
+
+)
+
 fun main (args:Array<String>) {
-    println(add(123,456))
     println(PI)
+
+    for((id,name) in users){
+       println("ID:$id, Name:$name")
+    }
 }
