@@ -12,6 +12,10 @@ template
 test
 """
 
+fun nullableString() : String? {
+        return null
+}
+
 fun main (args:Array<String>) {
     println(PI)
 
@@ -20,4 +24,6 @@ fun main (args:Array<String>) {
     }
 
     println(text)
+
+    println(nullableString()?:"text was null")
 }
