@@ -26,4 +26,6 @@ fun main (args:Array<String>) {
     println(text)
 
     println(nullableString()?:"text was null")
+
+    users.map{(key, value) -> println("ID:$key, Name:$value")}
 }
