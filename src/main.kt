@@ -16,6 +16,9 @@ fun nullableString() : String? {
         return null
 }
 
+val intArr : Array<Int> = arrayOf(1,2,5,8,10)
+val strArr : Array<String> = arrayOf("John","Apple","Watch","")
+
 fun main (args:Array<String>) {
     println(PI)
 
@@ -28,4 +31,7 @@ fun main (args:Array<String>) {
     println(nullableString()?:"text was null")
 
     users.map{(key, value) -> println("ID:$key, Name:$value")}
+
+    println(intArr.max())
+    println(strArr.maxBy{it.length})
 }
