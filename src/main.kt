@@ -19,6 +19,9 @@ fun nullableString() : String? {
 val intArr : Array<Int> = arrayOf(1,2,5,8,10)
 val strArr : Array<String> = arrayOf("John","Apple","Watch","")
 
+data class User (val name:String, val age:Int)
+
+
 fun main (args:Array<String>) {
     println(PI)
 
@@ -34,4 +37,8 @@ fun main (args:Array<String>) {
 
     println(intArr.max())
     println(strArr.maxBy{it.length})
+
+    val userData = User("Smith", 24)
+
+    println("${userData.name} is ${userData.age}")
 }
