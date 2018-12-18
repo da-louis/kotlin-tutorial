@@ -21,6 +21,7 @@ val strArr : Array<String> = arrayOf("John","Apple","Watch","")
 
 data class User (val name:String, val age:Int)
 
+val set = setOf(1,2,2,3,3,4,5,8,12,12)
 
 fun main (args:Array<String>) {
     println(PI)
@@ -41,4 +42,6 @@ fun main (args:Array<String>) {
     val userData = User("Smith", 24)
 
     println("${userData.name} is ${userData.age}")
+
+    set.map{println(it)}
 }
