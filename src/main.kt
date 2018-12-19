@@ -23,6 +23,8 @@ data class User (val name:String, val age:Int)
 
 val set = setOf(1,2,2,3,3,4,5,8,12,12)
 
+fun doublePositiveNumbder(number: Int) = if(number > 0) number*2 else 0
+
 fun main (args:Array<String>) {
     println(PI)
 
@@ -44,4 +46,8 @@ fun main (args:Array<String>) {
     println("${userData.name} is ${userData.age}")
 
     set.map{println(it)}
+
+    println(doublePositiveNumbder(12))
+    println(doublePositiveNumbder(0))
+    println(doublePositiveNumbder(-3))
 }
