@@ -25,6 +25,8 @@ val set = setOf(1,2,2,3,3,4,5,8,12,12)
 
 fun doublePositiveNumbder(number: Int) = if(number > 0) number*2 else 0
 
+infix fun Int.multiply(number: Int): Int = this * number
+
 fun main (args:Array<String>) {
     println(PI)
 
@@ -50,4 +52,6 @@ fun main (args:Array<String>) {
     println(doublePositiveNumbder(12))
     println(doublePositiveNumbder(0))
     println(doublePositiveNumbder(-3))
+
+    println(123 multiply 234)
 }
