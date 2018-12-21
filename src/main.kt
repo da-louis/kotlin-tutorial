@@ -54,4 +54,14 @@ fun main (args:Array<String>) {
     println(doublePositiveNumbder(-3))
 
     println(123 multiply 234)
+
+    val coordinate = object {
+        var x: Int = 0
+        var y: Int = 0
+    }
+
+    coordinate.x = 123
+    coordinate.y = 345
+
+    println("coordinate.x=${coordinate.x},coordinate.y=${coordinate.y}")
 }
